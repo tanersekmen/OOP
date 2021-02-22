@@ -34,7 +34,5 @@ def balikTut():
         print("Hatalı değer girişi yaptınız. Lütfen evet/hayır cevabı verin.")
 
 
-balik = balikTut()
-balik
-
-
+if __name__ == '__main__':
+    balikTut()
