@@ -24,7 +24,7 @@ def balikTut():
                 print("Balık Miktarı: ", balik_miktari)
             else:
                 balik_miktari += 1
-                print("Tebrikler! Balık yakaladınız. Yakaladığınız balık: ", c)
+                print("Tebrikler! Yakaladığınız balık: ", c)
                 print("Balık Miktarı: ", balik_miktari)
 
     elif cevap == 'Hayır' or cevap == 'hayır' or cevap == 'hAYIR' or cevap == 'HAYIR':
