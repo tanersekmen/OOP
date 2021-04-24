@@ -4,7 +4,7 @@ import time
 
 def balikTut():
     # burada boş bulunmasının sebebi boş değeri gelince ıska olarak görüp balık yakalamadığınızı dönecek.
-    a = {1: "Levrek",
+    balikListe = {1: "Levrek",
          2: "Sardalya",
          3: "Hamsi",
          4: "Ton Balığı",
@@ -20,7 +20,7 @@ def balikTut():
         b = random.randint(1, 5)
         if b == int(b):
             # get fonksiyonu ile veride 1 2 3 4 5 şeklinde etiketlenen değerleri çekiyorum.
-            c = a.get(b)
+            c = balikListe.get(b)
             if c == "boş":
                 print("Maalesef oltadaki yem ile balıkları beslediniz.")
                 print("Balık Miktarı: ", balik_miktari)
