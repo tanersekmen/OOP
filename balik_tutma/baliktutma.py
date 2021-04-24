@@ -1,4 +1,5 @@
 import random
+import time
 
 
 def balikTut():
@@ -13,6 +14,7 @@ def balikTut():
     cevap = input("Balık tutmak ister misiniz? : ")
     if cevap == "evet" or cevap == "Evet" or cevap == "EVET" or cevap == "eVET":
         print("Olta atılıyor...")
+        time.sleep(2)
         # Rastgele 1-5 arası sayıları çekiyorum. 5 değeri boş çekmeyi temsil ediyor.
         # Gelen değerler hangi balığın tutulduğunu gösteriyor.
         b = random.randint(1, 5)
@@ -28,7 +30,7 @@ def balikTut():
                 print("Balık Miktarı: ", balik_miktari)
 
     elif cevap == 'Hayır' or cevap == 'hayır' or cevap == 'hAYIR' or cevap == 'HAYIR':
-        print("Bugün balık tutmak istemiyorsunuz. Teşekkürler. İyi günler")
+        print("Bugün balık tutmak istemiyorsunuz. Tekrardan görüşmek üzere....")
 
     else:
         print("Hatalı değer girişi yaptınız. Lütfen evet/hayır cevabı verin.")
