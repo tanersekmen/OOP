@@ -1,4 +1,4 @@
-# distributions
+# Discrete Distributions
 
 - Some statistical discrete distributions.
 
