@@ -1,0 +1,2 @@
+# distributions
+Statistical discrete distributions 
