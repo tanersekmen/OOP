@@ -1,7 +1,9 @@
-# Discrete Distributions
+# Discrete and Continuous Distributions
 
-- Some statistical discrete distributions.
+- Some statistical discrete and continuous distributions.
 
-- Binomial, Bernoulli, Geometric and Poisson.
+- Binomial, Bernoulli, Geometric and Poisson are discrete distributions
 
-- I will add continuous distributions and their mean and variance.
+- Uniform and Exponentially are continuous distributions
+
+- I will add some different distributions that I used when I free.
