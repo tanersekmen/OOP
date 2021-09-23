@@ -12,24 +12,25 @@ def balikTut():
          }
     balik_miktari = 0
     cevap = input("Balık tutmak ister misiniz? : ")
-    if cevap == "evet" or cevap == "Evet" or cevap == "EVET" or cevap == "eVET":
+    cevap = str(cevap.lower())
+    if cevap == "evet":
         print("Olta atılıyor...")
         time.sleep(2)
         # Rastgele 1-5 arası sayıları çekiyorum. 5 değeri boş çekmeyi temsil ediyor.
         # Gelen değerler hangi balığın tutulduğunu gösteriyor.
-        b = random.randint(1, 5)
-        if b == int(b):
+        rastgele_deger = random.randint(1, 5)
+        if rastgele_deger == int(rastgele_deger):
             # get fonksiyonu ile veride 1 2 3 4 5 şeklinde etiketlenen değerleri çekiyorum.
-            c = balikListe.get(b)
-            if c == "boş":
+            bos_deger = balikListe.get(rastgele_deger)
+            if bos_deger == "boş":
                 print("Maalesef oltadaki yem ile balıkları beslediniz.")
                 print("Balık Miktarı: ", balik_miktari)
             else:
                 balik_miktari += 1
-                print("Tebrikler! Yakaladığınız balık: ", c)
+                print("Tebrikler! Yakaladığınız balık: ", bos_deger)
                 print("Balık Miktarı: ", balik_miktari)
 
-    elif cevap == 'Hayır' or cevap == 'hayır' or cevap == 'hAYIR' or cevap == 'HAYIR':
+    elif cevap == 'hayır' or cevap == 'hayir':
         print("Bugün balık tutmak istemiyorsunuz. Tekrardan görüşmek üzere....")
 
     else:
